@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>AI Study Buddy Pro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<h1>🎓 AI Study Buddy Pro</h1>
+
+<div class="tabs">
+    <button onclick="showSection('chat')">Ask Doubt</button>
+    <button onclick="showSection('quiz')">Generate Quiz</button>
+    <button onclick="showSection('summary')">Summarize Notes</button>
+    <button onclick="showSection('flashcards')">Flashcards</button>
+</div>
+
+<!-- Chat Section -->
+<div id="chat" class="section">
+    <h2>Ask Your Doubt</h2>
+    <input type="text" id="chatInput" placeholder="Enter your question">
+    <button onclick="askDoubt()">Ask</button>
+    <div id="chatResult"></div>
+</div>
+
+<!-- Quiz Section -->
+<div id="quiz" class="section" style="display:none;">
+    <h2>Generate Quiz</h2>
+    <input type="text" id="quizTopic" placeholder="Enter Topic">
+    
+    <select id="difficulty">
+        <option value="Easy">Easy</option>
+        <option value="Medium">Medium</option>
+        <option value="Hard">Hard</option>
+    </select>
+
+    <input type="number" id="numQuestions" placeholder="Number of Questions" min="1" max="10">
+
+    <button onclick="generateQuiz()">Generate</button>
+
+    <div id="quizContainer"></div>
+    <button id="submitQuizBtn" onclick="submitQuiz()" style="display:none;">Submit Quiz</button>
+    <div id="scoreResult"></div>
+</div>
+
+<!-- Summary Section -->
+<div id="summary" class="section" style="display:none;">
+    <h2>Summarize Notes</h2>
+    <textarea id="summaryInput" placeholder="Paste your notes here"></textarea>
+    <button onclick="summarize()">Summarize</button>
+    <div id="summaryResult"></div>
+</div>
+
+<!-- Flashcards Section -->
+<div id="flashcards" class="section" style="display:none;">
+    <h2>Generate Flashcards</h2>
+    <input type="text" id="flashcardTopic" placeholder="Enter Topic">
+    <button onclick="generateFlashcards()">Generate</button>
+    <div id="flashcardResult"></div>
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

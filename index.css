@@ -1,0 +1,51 @@
+body {
+    font-family: Arial;
+    background-color: #f4f6f9;
+    text-align: center;
+}
+
+h1 {
+    background: #2c3e50;
+    color: white;
+    padding: 15px;
+}
+
+.tabs button {
+    padding: 10px;
+    margin: 5px;
+    cursor: pointer;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+input, textarea, select {
+    padding: 8px;
+    margin: 5px;
+    width: 60%;
+}
+
+button {
+    padding: 8px 15px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+#quizContainer {
+    margin-top: 20px;
+}
+
+.question {
+    background: white;
+    padding: 10px;
+    margin: 10px auto;
+    width: 60%;
+    border-radius: 5px;
+}
